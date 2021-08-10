@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div class="d-flex align-items-center justify-content-between">
+    <h1>Found Pets</h1>
+    <!-- Add link to new pet here -->
+  </div>
+  <div class="cards">
+    <% @pets.each do |pet| %>
+      <%= render 'pets/card', pet: pet %>
+    <% end %>
+  </div>
+</div>
